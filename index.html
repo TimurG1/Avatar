@@ -8,11 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Headland+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
      <div class="container">
          <a href="/" class="link">
              <img src="./images/logo.png" alt="logo Avatar" class="logo">
@@ -31,9 +30,19 @@
            </ul>
          </nav>
          <button type="button" class="buttonstyle">Увійти</button>
-         <a href="#">
+         <ul class="language-switcher">
+            <li class="language-switcher-item">
+                <p class="language-switcher-text">ENG</p>
+            </li>
+            <li class="language-switcher-item">
+                <a href="#">
             <img src="./images/switcher.png" alt="button switch ukrainian to englisch">
          </a>
+            </li>
+            <li class="language-switcher-item">
+                <p class="language-switcher-text">UA</p>
+            </li>
+         </ul>
      </div>
     </header>
     <main>
@@ -42,39 +51,45 @@
         <div class="container">
         <p class="enter-text">Oe perlltxe hu tsamsiyu!Ngari hu Eywa salew tirea, tokx 'ì'awn slu Na'viyä hapxì.Säwem nìayoeng!</p>
         <p class="enter-text">Хоробрий воїне, звертаюсь до тебе!Твій дух йде з Ейвою, твоє тіло залишається, щоб стати частиною Народу.Борись разом з нами!</p>
-     <button class="buttonstyle">Приєднатись до клану</button>
+     <button class="buttonstyle-join">Приєднатись до клану</button>
      <ul class="icons-list">
         <li class="icons-item">
-            <a href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13560899670&extra_1=s%7Cc%7C547348927144%7Ce%7Cinstagram%7C&placement=&creative=547348927144&keyword=instagram">
+            <a href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13560899670&extra_1=s%7Cc%7C547348927144%7Ce%7Cinstagram%7C&placement=&creative=547348927144&keyword=instagram" target="_blank">
                 <img src="./images/inst.png" alt="icon of instagram">
             </a>
         </li>
         <li class="icons-item">
-            <a href="https://x.com/?lang=ua">
+            <a href="https://x.com/?lang=ua" target="_blank">
                 <img src="./images/twitter.png" alt="icon of twitter">
             </a>
         </li>
         <li class="icons-item">
-            <a href="https://www.youtube.com/">
+            <a href="https://www.youtube.com/" target="_blank">
                 <img src="./images/youtube.png" alt="icon of youtube">
             </a>
         </li>
       </ul>
-      <p class="quote">“БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ</p>
-      <p class="quote">ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ ЗАКІНЧУЄТЬСЯ.” </p>
+      <section class="quote">
+        <div class="container">
+      <p class="quote-text">“БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ ЗАКІНЧУЄТЬСЯ.” </p>
       <p class="author">Джейк Саллі</p>
+       </div> 
+      </section>
      </div>
     </section>
+    <!-- trailer -->
     <section class="trailer">
-     <!-- трейлер -->
-     <iframe width="100%" height="741px" src="https://www.youtube.com/embed/d9MyW72ELq0?si=qXxufSdXKk_6tq2N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     <button class="buttonstyle">Дивитися трейлер</button>
-     <!--  -->
-     <div class="container">
-       <p class="quote">“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ</p>
-       <p class="quote">ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</p>
-       <p class="author">Джейк Саллі</p>
+     <div class="container">  
+        <a href="https://www.youtube.com/watch?v=d9MyW72ELq0&t=1s" target="_blank">
+            <button class="buttonstyle-watch">Дивитися трейлер</button>
+        </a>
      </div>
+     </section>
+     <section class="quote">
+      <div class="container">
+         <p class="quote-text">“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</p>
+         <p class="author">Джейк Саллі</p>
+      </div>
      </section>
      <section>
      <div class="container">
@@ -105,9 +120,12 @@
             <p class="translate-result">Nong oet!</p>
          </li>
        </ul>
-        <p class="quote">“НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ,</p>
-        <p class="quote">ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”</p>
-        <p class="author">Нейтірі</p>
+       <section class="quote">
+          <div class="container">
+            <p class="quote-text">“НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ, ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”</p>
+            <p class="author">Нейтірі</p>
+          </div>
+       </section>
       </div>
      </section>
     </main>
@@ -116,19 +134,17 @@
          <a href="/" class="link">
               <img src="./images/logo.png" alt="logo Avatar" class="logo">
          </a>
-         <address>
-            <ul class="address-list">
-                <li class="address-item">
-                     <p class="address-text">Q&A E-mail</p>
-                     <a href="mailto:avatartwowqa@gmail.com" class="address-link">avatartwowqa@gmail.com</a>
+            <ul class="contact-list">
+                <li class="contact-item">
+                     <p class="contact-text">Q&A E-mail</p>
+                     <a href="mailto:avatartwowqa@gmail.com" class="contact-link">avatartwowqa@gmail.com</a>
                 </li> 
-                <li class="address-item">
-                     <p class="address-text">Cooperation E-mail</p>
-                     <a href="mailto:avatartwowcoop@gmail.com" class="address-link">avatartwowcoop@gmail.com</a>
+                <li class="contact-item">
+                     <p class="contact-text">Cooperation E-mail</p>
+                     <a href="mailto:avatartwowcoop@gmail.com" class="contact-link">avatartwowcoop@gmail.com</a>
                 </li> 
             </ul>
-            <p>©2023 Avatar: The Way Of Water. All rights reserved</p>
-         </address>
+           <p>©2023 Avatar: The Way Of Water. All rights reserved</p>
       </div>
     </footer>
 </body>
