@@ -31,7 +31,6 @@ img{
   --font-family: "Inter", sans-serif;
   --second-family: "HeadlandOne", sans-serif;
   --third-family: "Hammersmith One", sans-serif;
-  --main-text-color: #141414;
 }
 .container{
     width: 1062px;
@@ -43,15 +42,16 @@ img{
 .header{
    background: url(../images/overlay.png) center/cover no-repeat,url(../images/header.png) center/cover no-repeat;
    padding: 39px 0;
+   display: flex;
+   align-items: center;
+}
+.logo-header{
+  padding-bottom: 39px;
 }
 .header-position{
   display: flex;
   align-items: center;
-}
-.header-conaction{
-  display: flex;
-  
-}   
+} 
 .language-switcher{
   padding-left: 15px;
   margin-right: auto;
@@ -105,7 +105,6 @@ img{
 }
 .enter-position{
   display: flex;
-  flex-direction: row;
 }
 .enter-text-ua, .enter-text-navi{
   font-family: var(--font-family);
@@ -121,15 +120,21 @@ img{
   margin-bottom: 40px;
   margin-right: 606px;
 }
-.icon{
-  display: inline;
+.icons-list{
+  margin-top: 119px;
+}
+.instagram-icon{
+ margin-bottom: 24px;
+}
+.twitter-icon{
+ margin-bottom: 27px;
 }
 .quote-text{
   margin-top: 75px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 36px;
-  text-align: justify;
+  text-align: center;
   color: #0a3853;
 }
 .author{
@@ -183,8 +188,19 @@ img{
 .translate{
   background: url(../images/languagebackground.png) center/cover no-repeat;
 }
+.translate-tile{
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  color: #141414;
+  padding-top: 58px;
+  padding-bottom: 45px;
+}
 .translate-item{
-  flex-basis: calc(( 100% - 30px ) / 3);
+  flex-basis: calc(( 100% - 72px ) / 3);
+}
+.translate-card{
   background-color: rgba(255, 255, 255, 0.7);
 }
 .translate-word{
@@ -192,14 +208,15 @@ img{
  font-weight: 400;
  font-size: 24px;
  line-height: 1.00;
- text-align: justify;
- color: var(--main-text-color);
+ text-align: center;
+ color: #141414;
+ padding-top: 36px;
 }
 
 .group1:after{
   content: '';
   display: block;
-  margin: 40px 0;
+  margin: 40px 84px;
   height: 40px;
   width: 152px;
   background-image: url(../images/stickright.png);
@@ -207,7 +224,7 @@ img{
 .group2:after{
    content: '';
   display: block;
-  margin: 40px 0;
+  margin: 40px 84px;
   height: 40px;
   width: 152px;
   background-image: url(../images/birdmin.png);
@@ -215,7 +232,7 @@ img{
 .group3:after{
   content: '';
   display: block;
-  margin: 40px 0;
+  margin: 40px 84px;
   height: 40px;
   width: 152px;
   background-image: url(../images/stickleft.png);
@@ -225,32 +242,64 @@ img{
   font-weight: 400;
   font-size: 24px;
   line-height: 1.00;
-  text-align: justify;
+  text-align: center;
   color: #000;
+  padding-bottom: 36px;
+  margin-bottom: 93px;
 }
 .translate-list{
   display: flex;
   flex-wrap: wrap;
+  column-gap: 36px;
+  row-gap: 24px;
 }
 .footer{
   background: url(../images/overlay.png) center/cover no-repeat , url(../images/footerbackground.png) center/cover no-repeat;
   padding-top: 77px ;
   padding-bottom: 76px;
 }
-.footer-position{
+/* .footer-position:nth-child(-n+2){
   display: flex;
-}
+} */
 .logo-footer{
   border-right: 2px solid white;
   padding-right: 80px;
-  padding: 42px;
+  padding-top: 42px;
+  padding-bottom: 42px;
 }
-.contact-text, .contact-link{
+.contact-text{
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
-  text-align: justify;
+  text-align: center;
   color: #fff;
+  margin-bottom: 18px;
+  margin-left: 80px;
+  margin-right: 20px;
+}
+.contact-link{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 18px;
+  margin-left: 20px;
+}
+.contact-position{
+  margin-top: 45px;
+}
+.vector1{
+  margin-top: 57px;
+  width: 269px;
+  height: 0px;
+  outline: 1px dashed white ;
+}
+.vector2{
+  width: 194px;
+  height: 0px;
+  margin-top: 11px;
+  outline: 1px dashed white ;
 }
 .contact-item{
   display: flex;
@@ -259,6 +308,7 @@ img{
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
-  text-align: justify;
+  text-align: center;
   color: #fff;
+  margin-top: 37px;
 }
