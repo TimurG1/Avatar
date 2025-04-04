@@ -273,6 +273,7 @@ img {
   column-gap: 36px;
   row-gap: 24px;
 }
+/* footer */
 .footer {
   background: linear-gradient(
       to right,
@@ -285,7 +286,7 @@ img {
   width: 1440px;
   margin: 0 auto;
 }
-.footer-content{
+.footer-position{
   display: flex;
 }
 .logo-footer {
