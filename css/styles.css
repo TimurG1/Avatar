@@ -13,13 +13,7 @@ header {
 a {
   text-decoration: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1,h2,h3,h4,h5,h6,p {
   margin: 0;
   padding: 0;
 }
@@ -130,11 +124,18 @@ img {
 }
 .enter-text-navi {
   margin-right: 734px;
-  margin-bottom: 41px;
 }
 .enter-text-ua {
   margin-bottom: 40px;
   margin-right: 606px;
+}
+.enter-text-navi::after {
+  content: "";
+  display: block;
+  width: 152px;
+  height: 40px;
+  margin-left: 53px;
+  background-image: url(../images/stickwheit.png);
 }
 .icons-list {
   margin-top: 119px;
@@ -203,6 +204,7 @@ img {
   height: 80px;
   margin: 330px 386px;
 }
+/* Card translation */
 .translate {
   width: 1440px;
   margin: 0 auto;
@@ -270,7 +272,7 @@ img {
 .translate-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 36px;
+  column-gap: 36px; 
   row-gap: 24px;
 }
 /* footer */
@@ -333,6 +335,7 @@ img {
   background-repeat: no-repeat;
   background-size: 269px;
   background-position: 205px;
+  margin-bottom: 19px;
 }
 .contact-item:nth-child(2) {
   width: 769px;
