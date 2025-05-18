@@ -70,37 +70,63 @@
               Хоробрий воїне, звертаюсь до тебе!Твій дух йде з Ейвою, твоє тіло
               залишається, щоб стати частиною Народу.Борись разом з нами!
             </p>
-            <button class="buttonstyle-join">Приєднатись до клану</button>
+            <button class="buttonstyle-join" type="button" data-modal-open>Приєднатись до клану</button>
           </div>
+          <!-- modal window -->
+            <div class="backdrop is-hidden" data-backdrop>
+              <div class="modal">
+                <button type="button" data-modal-close class="button">
+                  <span class="close-modal-button">X</span>
+                </button>
+                <form action="" class="form">
+                  <label for="" class="modal-label"> Name
+                    <input type="text" class="modal-input">
+                  </label>
+                  <label for="" class="modal-label"> Email
+                    <input type="email" class="modal-input">
+                  </label>
+                  <button type="button" class="button-join"> Join clan</button>
+                </form>
+              </div>
+            </div>
           <ul class="icons-list">
             <li class="icons-item instagram-icon">
               <a
                 href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13560899670&extra_1=s%7Cc%7C547348927144%7Ce%7Cinstagram%7C&placement=&creative=547348927144&keyword=instagram"
                 target="_blank"
               >
-                <img
+              <svg class="social-icon" width="30" height="30">
+                <use href="./icons/symboldefs.svg#icon-instagram"></use>
+              </svg>
+                <!-- <img
                   src="./images/inst.png"
                   alt="icon of instagram"
                   class="icon"
-                />
+                /> -->
               </a>
             </li>
             <li class="icons-item twitter-icon">
               <a href="https://x.com/?lang=ua" target="_blank">
-                <img
+                <svg class="social-icon" width="34" height="30">
+                  <use href="./icons/symboldefs.svg#icon-twitter"></use>
+                </svg>
+                <!-- <img
                   src="./images/twitter.png"
                   alt="icon of twitter"
                   class="icon"
-                />
+                /> -->
               </a>
             </li>
             <li class="icons-item youtube-icon">
               <a href="https://www.youtube.com/" target="_blank">
-                <img
+                <svg class="social-icon" width="50" height="30">
+                  <use href="./icons/symboldefs.svg#icon-youtube"></use>
+                </svg>
+                <!-- <img
                   src="./images/youtube.png"
                   alt="icon of youtube"
-                  class="icon"
-                />
+                  class="icon" 
+                />-->
               </a>
             </li>
           </ul>
@@ -217,5 +243,6 @@
          >
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

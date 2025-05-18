@@ -137,6 +137,15 @@ img {
   margin-left: 53px;
   background-image: url(../images/stickwheit.png);
 }
+.social-icon {
+    fill: #fff;
+}
+.social-icon {
+    fill: #fff;
+}
+/* .social-icon:hover{
+    fill: orange;
+} */
 .icons-list {
   margin-top: 119px;
 }
@@ -352,4 +361,66 @@ img {
   text-align: center;
   color: #fff;
   margin-left: 474px;
+}
+/* modal window */
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.621);
+}
+.backdrop.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 600px;
+  height: 404px;
+  background-image: url(../images/modal.png);
+  
+  transform: translate(-50%, -50%);
+  padding: 113px 80px 25px 80px ;
+}
+.button{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.modal-label{
+   display: flex;
+   flex-direction: column;
+   row-gap: 5px;
+}
+.modal-label + .modal-label{
+  margin-top: 16px;
+}
+.modal-input{
+  height: 40px;
+}
+.button-join{
+  margin-top: 35px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #26c6ea;
+  background-color: #0b0e66;
+  border: 3px solid #26c7ea;
+  border-radius: 45px 0;
+  width: 260px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
